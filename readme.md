@@ -1,0 +1,54 @@
+# AWS Cloud Networking & Security Projects
+
+This repository contains hands-on AWS networking and security projects demonstrating practical experience designing secure cloud infrastructure.
+
+The projects cover core cloud networking concepts including VPC architecture, subnet design, network security, connectivity troubleshooting, private service access, and monitoring.
+
+---
+
+# Projects
+
+## 1. VPC Foundations
+Create a custom Virtual Private Cloud with defined CIDR ranges, subnets, route tables, and an Internet Gateway.
+
+## 2. Public vs Private Subnets
+Configure secure subnet architecture to control internet access and isolate internal resources.
+
+## 3. EC2 Connectivity Testing
+Launch EC2 instances and troubleshoot connectivity issues using security groups, network ACLs, and network tools.
+
+## 4. Network Security
+Implement Security Groups and Network ACLs to control inbound and outbound traffic within a VPC.
+
+## 5. VPC Peering
+Connect multiple VPC networks using private IP communication and configure routing for cross-VPC connectivity.
+
+## 6. S3 Access from EC2
+Configure AWS CLI access from EC2 to interact with S3 resources securely.
+
+## 7. VPC Endpoints
+Create private connections between VPC resources and AWS services without using the public internet.
+
+## 8. VPC Flow Logs Monitoring
+Monitor network activity within a VPC using Flow Logs and analyze traffic using CloudWatch Logs Insights.
+
+---
+
+# Technologies Used
+
+AWS VPC  
+Amazon EC2  
+Amazon S3  
+AWS IAM  
+AWS CloudWatch  
+AWS CLI
+
+---
+
+# Skills Demonstrated
+
+Cloud Networking  
+Secure Infrastructure Design  
+Network Troubleshooting  
+Access Control & IAM  
+Cloud Monitoring & Logging

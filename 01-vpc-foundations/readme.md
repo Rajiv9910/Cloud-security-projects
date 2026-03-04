@@ -57,7 +57,7 @@ Cloud networking fundamentals
 
 ### Internet Gateway
 
-![Internet Gateway](images/internet-gateway.png)
+![Internet Gateway](images/internet-gateway.png)    
 
 ### Route Table Configuration
 

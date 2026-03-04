@@ -49,7 +49,7 @@ Cloud networking fundamentals
 
 ### VPC Creation
 
-![VPC](images/vpc-created.png)
+![VPC](images/vpc-dashboard.png)
 
 ### Subnet Configuration
 

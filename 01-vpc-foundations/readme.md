@@ -37,11 +37,11 @@ This allows resources in the subnet to communicate with the internet.
 
 ## Skills Demonstrated
 
-AWS VPC configuration  
-Subnet design  
-Internet Gateway configuration  
-Route table management  
-Cloud networking fundamentals
+- AWS VPC configuration  
+- Subnet design  
+- Internet Gateway configuration  
+- Route table management  
+- Cloud networking fundamentals
 
 ---
 

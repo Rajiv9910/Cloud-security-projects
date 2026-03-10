@@ -45,7 +45,7 @@ Configured the NACL with simple restrictive rules (deny inbound and outbound by 
 ## Screenshots
 
 ### Private Subnet Configuration
-![Private Subnet configuration](images/vpc-dashboard.png)
+![Private Subnet configuration](images/private-subnet.png)
 
 ### Private Route Table
 ![Private route table](images/private-route-table.png)

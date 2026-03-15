@@ -63,7 +63,6 @@ This verified that the two instances could communicate internally within the VPC
 ### Testing Internet Connectivity
 
 Used the **curl** command from the public EC2 instance to test connectivity to an external website.
-curl https://learn.nextwork.org/projects/aws-host-a-website-on-s3
 
 The command returned HTML content from the website, confirming that the public instance had internet connectivity through the Internet Gateway.
 

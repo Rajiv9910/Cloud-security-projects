@@ -11,7 +11,9 @@ Security Groups function as **instance-level firewalls**, while Network ACLs act
 
 ## Architecture
 
-The architecture consists of a VPC containing an EC2 instance protected by two layers of network security:
+The architecture consists of a VPC containing an EC2 instance protected by two layers of network security controls.
+
+Traffic entering the subnet is filtered by a **Network ACL**, while traffic reaching the EC2 instance is filtered by a **Security Group**.
 
 - **Security Groups** – control inbound and outbound traffic at the instance level.
 - **Network ACLs** – control traffic entering and leaving the subnet.
@@ -54,6 +56,10 @@ Verified that both the Security Group and Network ACL enforced traffic rules cor
 ---
 
 ## Screenshots
+
+## Screenshots
+
+The following screenshots show the configuration of the Security Group and Network ACL rules used to enforce layered network security.
 
 ### Security Group Rules
 ![Security Group](images/security-group.png)

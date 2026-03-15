@@ -3,9 +3,9 @@
 
 This project demonstrates how AWS network security controls regulate traffic within a Virtual Private Cloud (VPC).
 
-The focus is on understanding how **Security Groups** and **Network ACLs** work together to enforce layered network security.
+The focus is on understanding how **Security Groups** and **Network ACLs** operate at different layers of the network to control traffic and enforce security boundaries.
 
-Security Groups act as **instance-level firewalls**, while Network ACLs act as **subnet-level firewalls**, providing defense-in-depth protection.
+Security Groups function as **instance-level firewalls**, while Network ACLs act as **subnet-level firewalls**, providing a layered security model within the VPC.
 
 ---
 
@@ -38,8 +38,9 @@ Configured a Network ACL for the subnet to filter traffic entering and leaving t
 
 ### Apply Layered Network Security
 
-Verified that both the Security Group and Network ACL worked together to control network traffic.
+### Apply Layered Network Security
 
+Verified that both the Security Group and Network ACL enforced traffic rules correctly, demonstrating how AWS applies security controls at both the instance and subnet levels.
 ---
 
 ## Skills Demonstrated

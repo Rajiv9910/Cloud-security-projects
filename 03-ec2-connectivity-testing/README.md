@@ -1,4 +1,4 @@
-# EC2 Deployment in Public and Private Subnets
+# EC2 Deployment and VPC Connectivity Testing
 
 ## Overview
 This project demonstrates how to launch EC2 instances in both public and private subnets within an Amazon VPC.
@@ -42,6 +42,33 @@ Used the **VPC and more** option to create the VPC, subnets, route tables, and I
 
 ---
 
+## Connectivity Testing
+
+After deploying the EC2 instances, connectivity tests were performed to verify that the VPC networking configuration was functioning correctly.
+
+### Connecting to the Public EC2 Instance
+
+Used **EC2 Instance Connect** to access the public EC2 instance through the AWS console.  
+The first connection attempt failed because the security group only allowed HTTP traffic while SSH access was required.
+
+This issue was resolved by updating the security group to allow **SSH (port 22)** access, after which the connection was successful.
+
+### Testing Connectivity Between Instances
+
+Used the **ping** command from the public server to test connectivity to the private server using its private IP address.
+ping 10.0.130.143
+
+This verified that the two instances could communicate internally within the VPC network.
+
+### Testing Internet Connectivity
+
+Used the **curl** command from the public EC2 instance to test connectivity to an external website.
+curl https://learn.nextwork.org/projects/aws-host-a-website-on-s3
+
+The command returned HTML content from the website, confirming that the public instance had internet connectivity through the Internet Gateway.
+
+---
+
 ## Skills Demonstrated
 - EC2 deployment in public and private subnets
 - SSH key pair usage
@@ -62,3 +89,15 @@ Used the **VPC and more** option to create the VPC, subnets, route tables, and I
 
 ### Private Security Group
 ![Private Security Group](images/private-security-group.png)
+
+### Connecting to the EC2 Instance
+![EC2 Connection](images/ec2-connection.png)
+
+### Initial Connectivity Test
+![Initial Ping](images/initial-ping.png)
+
+### Successful Ping Between Instances
+![Successful Ping](images/successful-ping.png)
+
+### Internet Connectivity Test (curl)
+![Curl Test](images/curl.png)

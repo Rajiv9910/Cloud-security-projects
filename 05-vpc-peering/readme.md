@@ -18,6 +18,10 @@ The architecture consists of two independent VPC environments connected through 
 
 Each VPC contains its own CIDR block and routing configuration. Communication between the networks was enabled by creating a peering connection and updating route tables to route traffic between the VPC CIDR ranges.
 
+Route tables in each VPC were updated so that traffic destined for the other VPC’s CIDR block was routed through the peering connection.
+
+The diagram below illustrates the two VPC environments, their route tables, the peering connection between them, and the connectivity validation performed between EC2 instances.
+
 ![VPC Peering Architecture](images/vpc-peering-architecture.png)
 
 ---

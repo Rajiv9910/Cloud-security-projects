@@ -87,8 +87,6 @@ aws s3 ls s3://vpc-project-rajiv
 
 Access was successful, confirming that traffic was now correctly routed through the VPC Endpoint.
 
-````
-
 ---
 
 ## Skills Demonstrated

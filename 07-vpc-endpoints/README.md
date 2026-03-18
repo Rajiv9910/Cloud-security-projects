@@ -40,7 +40,7 @@ S3 access was tested using:
 
 ```bash
 aws s3 ls
-
+````
 ---
 
 ### Create a VPC Endpoint
@@ -83,6 +83,7 @@ S3 access was tested again:
 
 ```bash
 aws s3 ls s3://vpc-project-rajiv
+````
 
 Access was successful, confirming that traffic was now correctly routed through the VPC Endpoint.
 
